@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #000;
+}
+
+.container .head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100000;
+}
+
+.container .head img{
+    width: 13%;
+}
+
+.container .head a{
+    background-color: rgb(299, 09, 20);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    padding: 7px 17px;
+    height: 34px;
+}
+
+.container .head a:hover{
+    background-color: rgba(255, 0, 0,0.9);
+}
+
+.banner:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to bottom, #000, transparent);
+    z-index: 20;
+}
+
+.banner:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top, #000, transparent);
+    z-index: 20;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .fit{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    z-index: 10;
+}
+
+.banner .box{
+    z-index: 1000;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.banner .box .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner .box .heading h2{
+    font-size: 3.125rem;
+    color: #fff;
+    letter-spacing: 2px;
+    width: 80%;
+    font-weight: 600px;
+}
+
+.banner .box .heading h5{
+    font-size: 1.52rem;
+    color: #fff;
+    font-weight: 400;
+    padding: 0.8rem 0;
+}
+
+.banner .box .heading p{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 500;
+    padding: 15px 0;
+    padding-bottom: 20px;
+}
+
+.banner .box .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .box .search input{
+    color: black;
+    width: 50%;
+    padding: 10px 10px 0 0 ;
+    border: 1px solid #8c8c8c;
+    border-radius: 2px;
+    outline: none;
+    font-size: 16px;
+    min-width: 400px;
+    height: 60px;
+    align-self: center;
+}
+
+.banner .box .search a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background: red;
+    box-shadow: 0 1px 0 rgba(0, 0, 0,0.45);
+    font-size: 1.625rem;
+    line-height: 60px;
+    min-width: 300px;
+    padding: 0 30px;
+}
+
+.part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+
+.part1 .talk{
+    width: 40%;
+
+}
+
+.part1 .img{
+    width: 45%;
+}
+
+.part1 .img img{
+    width: 100%;
+}
+
+.part1 .talk h1{
+    font-size: 3.3rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.part1 .talk p{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+
+.part2 .talk{
+    width: 48%;
+
+}
+
+.part2 .img{
+    width: 45%;
+}
+
+.part2 .img img{
+    width: 100%;
+}
+
+.part2 .talk h1{
+    font-size: 3.3rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.part2 .talk p{
+    font-size: 1.6rem;
+    color: white;
+}
+
+
+.part3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid #111;
+}
+
+.part3 .talk{
+    width: 48%;
+
+}
+
+.part3 .img{
+    width: 45%;
+}
+
+.part3 .img img{
+    width: 100%;
+}
+
+.part3 .talk h1{
+    font-size: 3.3rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.part3 .talk p{
+    font-size: 1.6rem;
+    color: white;
+}
+
+.list{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.list h1{
+    color: white;
+    font-size: 3rem;
+    padding: 3rem 0 4rem 0;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 4rem 0;
+}   
+
+.footer .one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    width: 25%;
+}
+
+.footer .one li{
+    padding: 7px 0;
+}
+
+.footer .one li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .one li a:hover{
+    border-bottom: 1px solid #ccc;
+}
+
